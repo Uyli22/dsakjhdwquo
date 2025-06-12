@@ -1,0 +1,109 @@
+script_key="SqZrNOTZIoOQNSOUkCQeVuMDOrwlgyKm";
+getgenv().Config = {
+    ["Time To Sell"] = 200, -- Seconds
+    ["Seed"] = {
+        ["Strawberry"] = 44,
+        ["Corn"] = 44,
+        ["Coconut"] = 44,
+        ["Apple"] = 44,
+        ["Watermelon"] = 44,
+        ["Mushroom"] = 44,
+        ["Pumpkin"] = 44,
+        ["Pepper"] = 44,
+        ["Cacao"] = 44,
+        ["Banana"] = 44,
+        ["Dragon Fruit"] = 44,
+        ["Mango"] = 44,
+        ["Cactus"] = 44,
+        ["Beanstalk"] = 44,
+        ["Grape"] = 44,
+        ["Bamboo"] = 44,
+	["Carrot"] = 44
+    },
+    ["FPS"] = 3,
+    ["Buy Egg"] = true,
+    ["Egg"] = {
+        ["Common Egg"] = false,
+        ["Uncommon Egg"] = false,
+        ["Rare Egg"] = false,
+        ["Mythical Egg"] = true,
+        ["Legendary Egg"] = false,
+        ["Bug Egg"] = true
+    },
+    ["Honey Item"] = {
+        ["Nectarine"] = false,
+        ["Flower Seed Pack"] = true,
+        ["Honey Sprinkler"] = false,
+        ["Honey Torch"] = false,
+        ["Bee Chair"] = false,
+        ["Honey Walkway"] = false,
+        ["Bee Egg"] = true,
+        ["Bee Crate"] = false,
+        ["Hive Fruit"] = false,
+        ["Honey Comb"] = false
+    },
+
+    ["Sprinkler"] = {
+        ["Basic Sprinkler"] = true,
+        ["Advanced Sprinkler"] = true,
+        ["Master Sprinkler"] = true,
+        ["Godly Sprinkler"] = true
+    },
+    ["Plant Candy"] = false,
+    ["PetNeedSend"] = {"Dragonfly", "Night Owl", "Raccoon"},
+    ["Destroy Mode"] = {
+        ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Tomato", "Orange Tulip"}
+    },
+    ["Url"] = "", -- Webhook
+  
+    ["Boost FPS"] = true,
+    ["Black Screen"] = true,
+    ["Note"] = "ZENPro",
+    ["Pet Mode"] = {
+        ["Sell Pet"] = true,
+        ["Equip Pet"] = true,
+        ["Name Pet Equip"] = {
+      ["Raccoon"] = true,
+            ["Red Fox"] = true,
+      ["Dragonfly"] = true,
+      ["Blood Owl"] = true,
+      ["Grey Mouse"] = true,
+      ["Brown Mouse"] = true,
+      ["Queen Bee"] = true
+        },
+        ["Rarity"] = { -- Rarity Sell Pet
+            ["Common"] = true,
+            ["Uncommon"] = true,
+            ["Rare"] = true,
+            ["Legendary"] = false,
+            ["Divine"] = false,
+            ["Mythical"] = false
+        },
+        ["Pet Dont Delete"] = {"Dragonfly", "Night Owl", "Raccoon", "Blood Owl", "Blood Kiwi", "Moon Cat", "Red Fox", "Grey Mouse", "Brown Mouse", "Queen Bee"}
+    },
+    ["Rejoin After X Time"] = 60, -- Minutes
+    ["Mutation Skips"] = { -- Skip Harvest
+        ["Pollinated"] = false,
+        ["Disco"] = true,
+        ["Twisted"] = false,
+        ["Wet"] = false,
+        ["Choc"] = false,
+        ["Bloodlit"] = false,
+        ["Celestial"] = true,
+        ["Moonlit"] = false,
+        ["Chilled"] = false,
+        ["Zombified"] = false,
+        ["Plasma"] = false,
+        ["Burnt"] = false,
+        ["Frozen"] = false,
+        ["Voidtouched"] = true,
+        ["HoneyGlazed"] = false,
+        ["Shocked"] = true
+    }
+}
+repeat
+    wait()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
+    task.wait(10)
+until getgenv().Loaded
